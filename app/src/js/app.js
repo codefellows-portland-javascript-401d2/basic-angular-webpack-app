@@ -3,8 +3,7 @@ const angular = require('angular');
 const app = angular.module('app', []);
 const cs = require('./cowsay');
 
-
-app.controller('main', function($scope) {
+app.controller('main', $scope => {
   $scope.saysTheCow = 'moo';
   $scope.cow = cs;
 });
