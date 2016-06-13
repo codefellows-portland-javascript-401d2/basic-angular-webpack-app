@@ -3,7 +3,7 @@ const hwp = require('html-webpack-plugin');
 module.exports = {
   entry: './src/js/app.js',
   output: {
-    path: './dist',
+    path: '../server/public',
     filename: 'bundle.js'
   },
   devtool: 'source-map',
