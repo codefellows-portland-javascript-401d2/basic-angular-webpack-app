@@ -6,11 +6,13 @@
   </head>
   <body ng-app="app">
     <h3>The cow knows all.</h3>
-    <section ng-controller="main">
-      <input ng-model="saysTheCow">
+    <div ng-controller="main">
+      <input ng-model="saysTheCow" value="moo">
       <br>
-      {{cowOut(saysTheCow)}}
-    </section>
+      <pre>
+{{cow(saysTheCow)}}
+      </pre>
+    </div>
 
   </body>
 </html>

@@ -1,7 +1,7 @@
 const hwp = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/js/app.js',
   output: {
     path: './dist',
     filename: 'bundle.js'
@@ -21,7 +21,7 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel',
       query: {
-        presets: ['es-2015']
+        presets: ['es2015']
       }
     },
     {
