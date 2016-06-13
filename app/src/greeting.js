@@ -1,9 +1,10 @@
 const cowsay = require('cowsay-browser');
 
 module.exports = function(place = 'World') {
-  return cowsay.say({
+  return cowsay.think({
     text: 'Hello ' + place,
     e : '. .',
-    T : 'U '
+    T : 'U ',
+    f: 'stegosaurus'
   });
 };
