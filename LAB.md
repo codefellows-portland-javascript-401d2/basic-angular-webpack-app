@@ -1,4 +1,4 @@
-![cf](http://i.imgur.com/7v5ASc8.png) Angular "Cowsay" App with Webpack
+![cf](http://i.imgur.com/7v5ASc8.png) Angular "Greeting" App with Webpack
 ====
 
 Build a client side fun greeting application. Your index.html pulls in your bundle in the context an angular app. Make sure to style your app using some css.
