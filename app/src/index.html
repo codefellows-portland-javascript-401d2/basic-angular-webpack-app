@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular | Cowsay | Webpack</title>
+</head>
+<body ng-app="app">
+  <h1>Angular + Cowsay + Webpack</h1>
+  <br /><br />
+  <div ng-controller="main">
+    <div id="inputBox">
+      <label>Write Your Text Here</label>
+      <input ng-model="place">
+    </div>
+    <br />
+    <div id="outputBox">
+      {{greeting(place)}}
+    </div>
+  </div>
+
+</body>
+</html>
