@@ -1,5 +1,7 @@
-![cf](http://i.imgur.com/7v5ASc8.png) Basic Angular App with Webpack and Express
+![cf](http://i.imgur.com/7v5ASc8.png) Angular "Cowsay" App with Webpack
 ====
+
+Build a client side cowsay application. Your index.html pulls in your bundle and has a cowsay 2-way data binding in an angular app. Make sure to style your app using some css.
 
 Your app should be usable in both:
 * Development mode
@@ -17,7 +19,7 @@ Angular should run and load properly in both modes.
 
 Bonus/stretch:
 * Webpack:
-  * ES6 FTW! Babel your js files and use ES6 module loading
-  * Package your css using webpack
+  * ES6 FTW! Babel your js files and use ES6 module loading **.5pts**
+  * Package your css using webpack **/.5pts**
 * Angular:
-  * Put a h1 in your app that updates when you enter text in an input field and clears when you hit a button called delete.
+  * As a bonus make your app capable of changing the cow image to something else. **1pts**
