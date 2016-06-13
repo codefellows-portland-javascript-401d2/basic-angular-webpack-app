@@ -1,0 +1,14 @@
+{
+  "name": "basic-angular-webpack-app",
+  "version": "1.0.0",
+  "description": "A client side fun greeting application with Angular and Webpack.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Johnny Luangphasy (https://github.com/jluangphasy)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
