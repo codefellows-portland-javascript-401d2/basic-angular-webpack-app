@@ -2,7 +2,7 @@ const HtmlPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/scripts/app.js',
   output: {
     path: '../server/public',
     filename: 'scripts/bundle.js'
@@ -16,10 +16,6 @@ module.exports = {
       }
     ],
     loaders: [
-      {
-        test: /\.html$/,
-        loader: 'html'
-      },
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
@@ -36,10 +32,7 @@ module.exports = {
   },
   devtool: 'source-map',
   plugins: [
-    new HtmlPlugin('./src/index.html'),
+    new HtmlPlugin({template: './src/index.html'}),
     new ExtractTextPlugin('styles/bundle.css')
-  ],
-  htmlLoader: {
-    ignoreCustomFragments: [/\{\{.*?}}/]
-  }
+  ]
 };

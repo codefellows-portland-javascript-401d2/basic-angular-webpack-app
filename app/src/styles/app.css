@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(66, 66, 66);
+}
+
+pre {
+  color: rgb(76, 175, 80);
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+@media (min-width: 600px) {
+  pre {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 960px) {
+  pre {
+    font-size: 20px;
+  }
+}
