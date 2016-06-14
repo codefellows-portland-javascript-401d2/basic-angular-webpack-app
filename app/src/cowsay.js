@@ -6,3 +6,9 @@ module.exports = function(moo = 'hi there') {
     T: 'U'
   });
 };
+
+module.exports = function(moomoo) {
+  return cowsay.say({
+    text: 'Hello there kind sir'
+  });
+};

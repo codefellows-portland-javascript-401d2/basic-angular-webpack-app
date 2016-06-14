@@ -7,3 +7,7 @@ const app = angular.module('app', [])
 .controller('cow', function($scope) {
   $scope.cowsay = cowsay;
 });
+
+app.controller('cow2', function($scope) {
+  $scope.cowsay = cowsay;
+});
