@@ -5,19 +5,25 @@
     <title>|Moooooo|</title>
   </head>
   <body ng-app="app">
-    <h1>Cowz rule!</h1>
+      <h1>Cowz rule!</h1>
+      <div ng-controller = "greetz">
+        {{hello}}
+      </div>
+      <br>
+      <div ng-controller="cow">
+        What would you like me to say?
+        <input ng-model="moo">
+        <pre>
 
-    <div ng-controller="cow">
-      What would you like me to say?
-      <input ng-model="moo">
-      <pre>
+  {{cowsay(moo)}}
 
-{{cowsay(moo)}}
-    </div>
-    <div ng-controller="cow2">
-      <pre>
+      </div>
+      <div ng-controller="cow2">
+        And how about me?
+        <input ng-model="moomoo">
+        <pre>
 
-{{cowsay(moomoo)}}
-    </div>
+  {{cowsay2(moomoo)}}
+      </div>
   </body>
 </html>
