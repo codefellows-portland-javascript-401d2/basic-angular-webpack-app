@@ -6,5 +6,5 @@ const host = process.env.HOST || 'localhost';
 app.listen(port, host, err => {
   if (err) return console.error(err);
 
-  console.log(`Magic happens on: http://${host}:${port}`);
+  console.log(`Magic happens at: http://${host}:${port}`);
 });

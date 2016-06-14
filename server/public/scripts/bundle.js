@@ -63040,7 +63040,11 @@
 
 	'use strict';
 	
-	var cowsay = __webpack_require__(16);
+	var _cowsayBrowser = __webpack_require__(16);
+	
+	var _cowsayBrowser2 = _interopRequireDefault(_cowsayBrowser);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var greeting = module.exports;
 	
@@ -63048,7 +63052,7 @@
 	  var name = arguments.length <= 0 || arguments[0] === undefined ? 'Code Fellows' : arguments[0];
 	  var format = arguments.length <= 1 || arguments[1] === undefined ? 'default' : arguments[1];
 	
-	  return cowsay.say({
+	  return _cowsayBrowser2.default.say({
 	    text: 'Hello ' + name,
 	    f: format
 	  });

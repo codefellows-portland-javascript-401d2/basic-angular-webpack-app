@@ -1,4 +1,4 @@
-const cowsay = require('cowsay-browser');
+import cowsay from 'cowsay-browser';
 
 const greeting = module.exports;
 
