@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon index.js"
+  },
+  "author": "Don Chatelain",
+  "license": "ISC",
+  "dependencies": {
+    "cowsay-browser": "^1.1.8",
+    "express": "^4.13.4"
+  }
+}

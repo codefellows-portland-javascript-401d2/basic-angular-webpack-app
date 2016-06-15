@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular | Cowsay | Webpack</title>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+</head>
+
+<body ng-app="app">
+
+  <h1>Angular + Cowsay + Webpack</h1>
+  <br /><br />
+  <div ng-controller="main">
+    <div id="inputBox">
+      <label>Write Your Text Here</label>
+      <input ng-model="place">
+    </div>
+    <br />
+    <div id="outputBox" 
+         style="color: rgb({{color.red}}, {{color.green}}, {{color.blue}})">
+      {{greeting(place)}}
+    </div>
+    <br />
+<!--
+    <div id="colorChoiceBox">
+      <li ng-repeat="c in ['red', 'blue', 'green']">
+        <input ng-model="$parent.sayColor" 
+               type="radio" 
+               name="sayColor"
+               ng-value="c"
+               />
+        <label>{{c}}</label>
+      </li>
+    </div>  -->
+
+  <div id="sliderBox>
+    <md-content style="margin: 16px; padding:16px">
+
+      <md-slider-container>
+        <span>R</span>
+        <md-slider flex min="0" max="255" ng-model="color.red">
+        </md-slider>
+        <md-input-container>
+          <input flex type="number" ng-model="color.red">
+        </md-input-container>
+      </md-slider-container>
+      <md-slider-container>
+        <span>G</span>
+        <md-slider flex ng-model="color.green" min="0" max="255" id="green-slider" class="md-accent">
+        </md-slider>
+        <md-input-container>
+          <input flex type="number" ng-model="color.green">
+        </md-input-container>
+      </md-slider-container>
+      <md-slider-container>
+        <span class="md-body-1">B</span>
+        <md-slider flex ng-model="color.blue" min="0" max="255" id="blue-slider" class="md-primary">
+        </md-slider>
+        <md-input-container>
+          <input flex type="number" ng-model="color.blue">
+        </md-input-container>
+      </md-slider-container>
+    </md-content>
+  </div>
+
+  
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
