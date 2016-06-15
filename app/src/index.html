@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Greeting App</title>
+  </head>
+  <body ng-app="greetingApp" md-theme="docs-dark" ng-cloak>
+    <div ng-controller="greeting">
+      <md-content layout-padding>
+        <div layout="row" layout-align="center center">
+          <h1>Greeting App</h1>
+        </div>
+        <div layout-gt-xs="row">
+          <md-input-container class="md-block" flex-gt-xs>
+            <label>Name</label>
+            <input type="text" ng-model="inputedName" placeholder="Enter your name">
+          </md-input-container>
+          <md-input-container class="md-block" flex-gt-xs>
+            <label>Format</label>
+            <md-select ng-model="selectedFormat">
+              <md-option ng-repeat="cowsayFormat in greeting.cowsayFormats" ng-value="cowsayFormat">{{cowsayFormat}}</md-option>
+            </md-select>
+          </md-input-container>
+        </div>
+        <div layout="row" layout-align="center center">
+          <pre>{{greeting.cowsay(inputedName, selectedFormat)}}</pre>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
